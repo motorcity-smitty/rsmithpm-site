@@ -253,12 +253,9 @@
       grid-template-columns: 220px 1fr;
       border-top: 1px solid var(--rule);
       padding: 3rem 0;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.5s, transform 0.5s;
     }
 
-    .exp-item.visible { opacity: 1; transform: none; }
+    .exp-item.visible { }
 
     .exp-meta { padding-right: 2rem; }
 
@@ -305,11 +302,12 @@
     }
 
     .exp-bullets li::before {
-      content: '→';
+      content: '·';
       position: absolute;
       left: 0;
-      color: var(--accent);
-      font-size: 0.75rem;
+      color: var(--ink-light);
+      font-size: 1.1rem;
+      line-height: 1.5;
     }
 
     /* ── ACHIEVEMENTS ── */
@@ -935,7 +933,7 @@
   <h2 class="section-title" style="margin-bottom:1.5rem;">Get In Touch</h2>
   <p class="contact-sub">Open to conversations about Director of Product roles, senior leadership opportunities, or advisory engagements.</p>
   <div class="contact-links">
-    <a class="btn" href="mailto:ryan@rsmithpm.com">ryan@rsmithpm.com</a>
+    <a class="btn" href="/cdn-cgi/l/email-protection#493b302827093b3a24203d213924672a2624"><span class="__cf_email__" data-cfemail="8bf9f2eae5cbf9f8e6e2ffe3fbe6a5e8e4e6">[email&#160;protected]</span></a>
     <a class="btn" href="https://www.linkedin.com/in/rwsmith84" target="_blank">LinkedIn</a>
     <a class="btn" href="tel:+15199941020">+1 519-994-1020</a>
     <a class="btn" href="https://drive.google.com/file/d/1ocbdNrS0nRuaur99ukeHPN0BaW_Xh6BR/view" target="_blank">Resume PDF</a>
@@ -946,9 +944,4 @@
   © 2025 Ryan Smith · rsmithpm.com
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  // Scroll-triggered reveal for experience items
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        setTimeout((
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static
